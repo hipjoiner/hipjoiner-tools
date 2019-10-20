@@ -11,7 +11,7 @@ setuptools.setup(
     description='Pip-installable toolkit',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/hipjoiner/tools',
+    url='https://github.com/hipjoiner/hipjoiner-tools.git',
     packages=setuptools.find_packages(),
     classifiers=[
         'Programming Language :: Python :: 3',
@@ -20,8 +20,8 @@ setuptools.setup(
     ],
     entry_points={
         'console_scripts': [
-            'ppath = hipjoiner.tools.ppath:pretty_path',
-            'which = hipjoiner.tools.which:which',
+            'ppath = tools.ppath:pretty_path',
+            'which = tools.which:which',
         ],
     }
 )
