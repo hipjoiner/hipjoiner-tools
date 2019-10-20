@@ -1,10 +1,11 @@
-import setuptools
+from setuptools import setup, find_namespace_packages
+
 
 with open('README.md', 'r') as fh:
     long_description = fh.read()
 
-setuptools.setup(
-    name='hipjoiner',
+setup(
+    name='hipjoiner-tools',
     version='2019.10.19',
     author='John Pirie',
     author_email='john@thepiries.net',
@@ -12,7 +13,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/hipjoiner/hipjoiner-tools.git',
-    packages=setuptools.find_packages(),
+    packages=find_namespace_packages(include=['hipjoiner.*']),
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
@@ -20,8 +21,8 @@ setuptools.setup(
     ],
     entry_points={
         'console_scripts': [
-            'ppath = tools.ppath:pretty_path',
-            'which = tools.which:which',
+            'ppath = hipjoiner.tools.ppath:pretty_path',
+            'which = hipjoiner.tools.which:which',
         ],
     }
 )
