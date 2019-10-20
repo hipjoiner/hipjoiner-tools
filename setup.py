@@ -4,7 +4,7 @@ with open('README.md', 'r') as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name='tools',
+    name='hipjoiner',
     version='2019.10.19',
     author='John Pirie',
     author_email='john@thepiries.net',
