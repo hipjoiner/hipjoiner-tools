@@ -6,13 +6,13 @@ with open('README.md', 'r') as fh:
 
 setup(
     name='hipjoiner-tools',
-    version='2019.10.19',
-    author='John Pirie',
-    author_email='john@thepiries.net',
+    version='2019.11.3',
     description='Pip-installable toolkit',
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/hipjoiner/hipjoiner-tools.git',
+    author='John Pirie',
+    author_email='john@thepiries.net',
     packages=find_namespace_packages(include=['hipjoiner.*']),
     classifiers=[
         'Programming Language :: Python :: 3',
